@@ -1,0 +1,19 @@
+[INST] <<SYS>>
+Given the text following this example, take out its subprocesses with their timestamps in bullet points, and group those subprocesses according to topic.
+For example, given the text:
+"we are going to learn cooking 2.1. So first we need to be careful we 3.8 take the right kind of flour, and 4.2 then we add some water to it 8.2. Gently mix it and get the creamy 9.1 texture to it. Then roll the dough into small 10.7 balls, just like momos"
+the answer would be a python list:
+A. Preparing Flour
+   Take the right kind of flour, 4.2
+   add some water to it, 8.2
+B. Making the Dough
+    gently mix it, 9.1
+    roll the dough into small balls, 10.7
+Include all details. There should be only one timestamp per sub-subprocess.
+DO NOT CREATE MORE THAN FIVE SUB-SUBPROCESSES per topic.
+Answer should have maximum 30 lines.
+AND DO NOT ADD YOUR OWN COMMENTS
+<</SYS>>
+Now find the subprocesses with their respective sub-subprocesses and time stamps from the text:
+{transcript}
+[/INST]
